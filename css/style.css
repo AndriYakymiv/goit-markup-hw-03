@@ -361,7 +361,15 @@ ul {
   color: var(--accent-color);
 }
 
-/*-------------------Портфолио - Фильтр--------------------------------*/
+/*-------------------PORTFOLIO - FILTER--------------------------------*/
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-item:not(:last-child) {
+  margin-right: 9px;
+}
 .portfolio-filter-btn {
   background: var(--section-ourteam-color);
   border-radius: 4px;
@@ -373,11 +381,28 @@ ul {
   color: var(--secondary-title-color);
 }
 
-/*-------------------Портфолио - Проекти--------------------------------*/
+/*-------------------PORTFOLIO - PROJECTS--------------------------------*/
+.portfolio-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+.portfolio-projects-list {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
 .portfolio-projects-item {
   background: var(--only-white-color);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc (100% / 3 - 30px);
 }
 
 .portfolio-projects-title {
@@ -386,6 +411,8 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-title-color);
+  margin-top: 20px;
+  margin-left: 24px;
 }
 .portfolio-projects-description {
   font-weight: normal;
@@ -393,4 +420,7 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-top: 4px;
+  margin-left: 24px;
+  margin-bottom: 20px;
 }
