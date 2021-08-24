@@ -14,6 +14,40 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container-header {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.container-pading-non {
+  padding-top: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .list {
   list-style: none;
 }
@@ -21,10 +55,28 @@ body {
   text-decoration: none;
 }
 
-/*----------------------Хедер----------------------------*/
+/*----------------------HEADER----------------------------*/
 .header {
   background: var(--line-bg-color);
 }
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-logo {
   font-family: Raleway;
   font-style: normal;
@@ -33,6 +85,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-right: 93px;
 }
 .header-logo-studio {
   font-family: Raleway;
@@ -45,23 +98,35 @@ body {
 }
 
 .header-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-title-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
 
+.header-right {
+  margin-left: auto;
+  display: flex;
+}
+
 .header-mail {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-mail:hover,
 .header-mail:focus {
@@ -69,18 +134,22 @@ body {
 }
 
 .header-tel {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-/*----------------------BG----------------------------*/
+/*----------------------HERO----------------------------*/
 
 .hero {
   background: var(--bg-color);
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -89,6 +158,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--only-white-color);
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -105,16 +175,25 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--only-white-color);
 }
 
-/*----------------------Что мы предлагаем----------------------------*/
+/*----------------------FEATURE----------------------------*/
 .feature {
   background: var(--section-whatdo-color);
+}
+.feature-list {
+  display: flex;
+}
+
+.feature-item {
+  width: 270px;
+}
+.feature-item:not(:last-child) {
+  margin-right: 30px;
 }
 .feature-title {
   font-weight: bold;
@@ -123,6 +202,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+  padding-bottom: 10px;
 }
 .feature-content {
   font-weight: normal;
@@ -134,10 +214,18 @@ body {
 .feature {
   background: var(--section-whatdo-color);
 }
-/*------------------------Чем мы занимаемся--------------------------*/
+/*---------------WHAT TO DO---------------*/
 .whatdo {
   background: var(--section-whatdo-color);
 }
+.whatdo-list {
+  display: flex;
+}
+
+.whatdo-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .whatdo-title {
   font-weight: bold;
   font-size: 36px;
@@ -145,8 +233,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+  padding-bottom: 50px;
 }
-/*-------------------------Наша команда------------------------------*/
+/*---------------OURTEAM------------------*/
 .ourteam {
   background: var(--section-ourteam-color);
 }
@@ -157,6 +246,19 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+}
+
+.ourteam-list {
+  display: flex;
+  padding-top: 50px;
+}
+
+.ourteam-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.ourteam-item {
+  background-color: var(--only-white-color);
 }
 .ourteam-img {
   border-radius: 0px;
@@ -169,6 +271,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-title-color);
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .ourteam-position {
@@ -178,13 +282,15 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  padding-bottom: 30px;
 }
 
-/*-----------------------------Футер--------------------------------*/
+/*---------------FOOTER---------------*/
 
 .footer {
   background: var(--bg-color);
 }
+
 .footer-logo {
   font-family: Raleway;
   font-style: normal;
@@ -203,6 +309,14 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--only-white-color);
+}
+
+.footer-list-address {
+  padding-top: 20px;
+}
+
+.footer-item {
+  padding-top: 9px;
 }
 
 .footer-address {
@@ -226,6 +340,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  padding-top: 9px;
 }
 .footer-email:hover,
 .footer-email:focus {
